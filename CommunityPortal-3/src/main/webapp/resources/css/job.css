@@ -1,0 +1,607 @@
+@charset "UTF-8";
+@charset "ISO-8859-1";
+
+
+:root {
+    --primary: #2D77CE;
+    --secondary: #112D4E;
+    --head: #333333;
+    --sub-head: #797979;
+    --body: #fefefe;
+    --secondbody: #F9F7F7;
+    --thirdbody: #F0F0F0;
+}
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--primary);
+} */
+
+
+/* .formcontainerDivInner{
+		display: flex;
+	justify-content: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.formcontainerDivInner2{
+			display: flex;
+	justify-content: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.postjob1Cont1, .postjob1Cont2{
+	width: 50%;
+	background-color:var(--body);
+	padding: 20px 30px;
+	border-radius: 10px;
+}
+
+.inputbxPOstJB1{
+	margin-bottom: 5%;
+}
+.detailsPOstJB1{
+	font-weight: 500;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.btnPOstJB1{
+	background-color: var(--primary);
+	border:none;
+	padding: 7px 15px;
+	border-radius: 5px;
+	color: var(--body);
+}
+.btnPOstJB2{
+	padding: 7px 15px;
+	border-radius: 5px;
+	border:1px solid var(--primary);
+	color: var(--primary);
+	margin-right: 5%;
+} */
+
+/* Base styles */
+.formcontainerDivInner,
+.formcontainerDivInner2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.postjob1Cont1,
+.postjob1Cont2 {
+    width: 50%;
+    background-color: var(--body);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.inputbxPOstJB1 {
+    margin-bottom: 5%;
+}
+
+.detailsPOstJB1 {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.btnPOstJB1 {
+    background-color: var(--primary);
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: var(--body);
+}
+
+.btnPOstJB2 {
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    margin-right: 5%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Tablet styles */
+    .formcontainerDivInner,
+    .formcontainerDivInner2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .postjob1Cont1,
+    .postjob1Cont2 {
+        width: 80%; /* Adjust the width as needed */
+    }
+
+    .btnPOstJB2 {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Mobile styles */
+    .postjob1Cont1,
+    .postjob1Cont2 {
+        width: 90%; /* Adjust the width as needed */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .jobDetailsCard{
+	width:50%;
+	margin-bottom: 5%;
+	
+}
+.jobDetailsCardBody{
+	padding: 0;
+
+}
+.jobDetailsCard > *{
+	color: #313131;
+}
+.jobDetailsPageContainer{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.jobPageContainer{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2%;
+	
+}
+
+.jobCardsListCard{
+	box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+	margin-top: 1%;
+	border-left:5px;
+	width: 400px;
+}
+.jobPageCardBody{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.jobPageCardBody > *{
+	color: #313131;
+}
+.postedAtTime1{
+	margin: 0;
+}
+.jobTitle1{
+	color: #313131;
+}
+.jobLocation1{
+	font-size: 14px;
+	color: #919191;
+	margin-top: 10px;
+}
+.workSetting1, .jobType{
+	background-color: #ececec;
+	color: #313131;
+	border-radius: 5px;
+	margin:0;
+	padding: 5px 10px;
+
+	
+}
+.workSettingNType{
+	display: flex;
+	gap: 5px;
+	margin-bottom: 20px;
+}
+.postedAtTime1{
+	color: #919191;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+.viewJobDetailsbtn1{
+	background-color: var(--primary);
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+.viewJobDetailsbtnInside{
+		color: #fefefe;
+}
+.jobDetailsDosNQualList{
+	list-style: disc;
+}
+.jobDetailsTitle{
+	margin-bottom: 15px;
+}
+.jobDetailsCompany{
+	font-weight: 400;
+	
+}
+
+.jobDetailsLocation{
+	margin-top: 8px;
+	color: #919191;
+}
+.jobDetailsCardTop{
+	border-bottom: 1px solid #212529;
+	padding: 30px 35px;
+	padding-bottom: 20px;
+}
+.jobDetailsCard{
+	padding: 20px 35px;
+}
+.jobApplyBtn{
+	margin-top: 3%;
+	background-color: var(--primary);
+	font-weight: 500;
+}
+.jobDetailsType{
+		background-color: #ececec;
+	color: #313131;
+	border-radius: 5px;
+	margin:0;
+	padding: 5px 10px;
+	font-weight: 500;
+	font-size: 14px;
+	width: 20%;
+	text-align: center;
+	margin-top: 5px;
+}
+.jobDetailsTypeLabel{
+	color: #313131;
+	margin:0;
+	font-weight: 500;
+}
+
+.jobtypeDiv{
+	margin-bottom: 3%;
+}
+
+.workSetDiv{
+	margin-bottom: 6%;
+}
+.jobDetailsDesc{
+	font-size: 14px;
+	font-weight: 400;
+}
+.resLabel{
+	font-weight: 500;
+}
+.jobDetailsDosNQualList{
+	font-size: 14px;
+} */
+
+/* Your existing styles */
+.jobDetailsCard {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 5%;
+}
+
+@media (min-width: 992px) {
+    .jobDetailsCard {
+        width: 50%;
+    }
+}
+.jobDetailsCardBody {
+    padding: 0;
+}
+
+.jobDetailsCard > * {
+    color: #313131;
+}
+
+.jobDetailsPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.jobPageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.jobCardsListCard {
+    box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    border-left: 5px;
+    width: 400px /* Full width on smaller screens */
+}
+
+.jobPageCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.jobPageCardBody > * {
+    color: #313131;
+}
+
+.postedAtTime1 {
+    margin: 0;
+}
+
+.jobTitle1 {
+    color: #313131;
+}
+
+.jobLocation1 {
+    font-size: 14px;
+    color: #919191;
+    margin-top: 10px;
+}
+
+.workSetting1,
+.jobType {
+    background-color: #ececec;
+    color: #313131;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.workSettingNType {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.postedAtTime1 {
+    color: #919191;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.viewJobDetailsbtn1 {
+    background-color: var(--primary);
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.viewJobDetailsbtnInside {
+    color: #fefefe;
+}
+
+.jobDetailsDosNQualList {
+    list-style: disc;
+}
+
+.jobDetailsTitle {
+    margin-bottom: 15px;
+}
+
+.jobDetailsCompany {
+    font-weight: 400;
+}
+
+.jobDetailsLocation {
+    margin-top: 8px;
+    color: #919191;
+}
+
+.jobDetailsCardTop {
+    border-bottom: 1px solid #212529;
+    padding-bottom: 20px;
+}
+
+.jobDetailsCard {
+    padding: 20px;
+}
+
+.jobApplyBtn {
+    margin-top: 3%;
+    background-color: var(--primary);
+    font-weight: 500;
+}
+
+.jobDetailsType {
+    background-color: #ececec;
+    color: #313131;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 20%; /* Let it take natural width */
+    text-align: center;
+    margin-top: 5px;
+}
+
+.jobDetailsTypeLabel {
+    color: #313131;
+    margin: 0;
+    font-weight: 500;
+}
+
+.jobtypeDiv {
+    margin-bottom: 3%;
+}
+
+.workSetDiv {
+    margin-bottom: 6%;
+}
+
+.jobDetailsDesc {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.resLabel {
+    font-weight: 500;
+}
+
+.jobDetailsDosNQualList {
+    font-size: 14px;
+}
+
+
+.jobSearchBannerCont, .jobSearchBannerCont{
+    background-color: #F2F6FF;
+/*     display: flex;
+    justify-content: center;
+    align-items:center; */
+    padding: 40px 0px; 
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.jobSearchBannerForm{
+	    display: flex;
+    justofy-content: center;
+    align-items:center;
+}
+.jobsearchbox{
+	border: 1px solid #313131;
+}
+.jobSearchInputGroup{
+	width: 300px;
+}
+.searchJobBtn{
+	color: #fefefe;
+	font-weight: 500;
+	margin-left: 2%;
+}
+
+
+
+.applicantsData{
+	font-size: 14px;
+}
+.approveApplicationBtn{
+	font-size: 14px;
+	border: none;
+	background-color: #BFDB38;
+	border-radius: 5px;
+	padding: 5px 10px;
+	
+}
+.deleteApplicationBtn{
+	border: 1px solid #dc3545;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 14px;
+	background-color: transparent;
+	color: #dc3545;
+	margin-left: 5px;
+	
+}
+
+.tabledivApplications, .tableDivApproved{
+	/* padding: 10px 15px; */
+	box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
+	background-color: #fefefe;
+	/* border-radius: 24px; */
+}
+.tableDivApproved{
+	display: flex;
+	flex-direction: row;
+
+}
+#tableDivApprovedCol{
+	padding-right: 0;
+}
+.tabledivApplicationsTable{
+	height: 275px;
+}
+.tableDivApprovedTable{
+	height: 200px;
+}
+.pendingContainer, .approvedContainer{
+	margin-bottom: 2%;
+}
+.approvedContainer{
+	margin-bottom: 5%;
+}
+.jobTableLabels{
+	padding-top: 2%;
+}
+.totalPendingCard, .totalApprovedCard{
+	height: 110px;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: center
+}
+.totalApplicationNApprovedDiv{
+	height:100%;
+}
+.totalApplicationNApprovedDiv * {
+	margin: 0;
+}
+.totalPendingCard{
+/* 	padding-bottom: 2%; */
+	margin-bottom: 25px;
+}
+
+.applicantsDataAction{
+	display: flex;
+}
+.totalPendingCard h4, .totalApprovedCard h4{
+	font-size: 16px;
+	}
+@media (max-width: 989px){
+			.totalPendingCard h4, .totalApprovedCard h4{
+	font-size: 14px;
+	}
+}
+@media (max-width: 768px){
+	
+	.tableAdminApplicationsHeader{
+	text-align: center;
+	font-size: 10px;
+	}
+	.applicantsData, .approveApplicationBtn, .deleteApplicationBtn{
+	font-size: 10px;
+	}
+	.totalPendingCard, .totalApprovedCard{
+	padding:0;
+	padding: 10px 15px;
+	
+	}
+		.totalPendingCard h4, .totalApprovedCard h4{
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 10px;
+	}
+	
+	.totalPendingCard p, .totalApprovedCard p{
+		font-size: 14px;
+		text-align: center;
+	}
+	
+}
+
+#home-tab, #profile-tab{
+	font-size: 18px; 
+	font-weight: 600;
+	margin:0;
+}
+#jobDisplayDivInner{
+	margin-bottom:50px;
+}

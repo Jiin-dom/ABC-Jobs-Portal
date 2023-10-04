@@ -1,0 +1,87 @@
+@charset "ISO-8859-1";
+:root {
+    --primary: #2D77CE;
+    --secondary: #112D4E;
+    --head: #333333;
+    --sub-head: #797979;
+    --body: #fefefe;
+    --secondbody: #F9F7F7;
+    --input-btn-padding-x: 50px;
+}
+
+/* ------------------------fp1---------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.forgotpass1 {
+    background-color: #FFFFFF;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#emailinput {
+    height: 60px;
+    width: 330px;
+    border-radius: 20px;
+    border: 1px solid #797979;
+}
+#emailinput:focus{
+    border: 1px solid #797979;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(0, 0, 0, 0);
+}
+.header {
+    margin-top: 20px;
+}
+.text{
+    color:#797979;
+    font-size: 14px;
+}
+
+.btn1{
+    height: 60px;
+    width: 330px;
+    background-color: #112D4E;
+    border-radius: 20px;
+    border: none;
+    color:#fefefe;
+    font-size: 20px;
+    font-weight: 600;
+}
+.right{
+    margin-left:20px;
+}
+.textgroup{
+    text-align: center;
+}
+
+
+/* ----------------------------- search --------------------- */
+.container{
+    background-color: #F2F6FF;
+    /* display: flex;
+    align-items: center;
+    padding: 40px 0px; */
+    
+}
+.hdln{
+    font-size: 90px;
+    color: #112D4E;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.hdln2{
+    font-size: 34px;
+    font-weight: 400 ;
+    line-height:110%;
+    margin-right: 5%;
+}

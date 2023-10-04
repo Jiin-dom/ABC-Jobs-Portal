@@ -1,0 +1,245 @@
+@charset "ISO-8859-1";
+:root {
+    --primary: #2D77CE;
+    --secondary: #112D4E;
+    --head: #333333;
+    --sub-head: #797979;
+    --body: #fefefe;
+    --secondbody: #F9F7F7;
+    --input-btn-padding-x: 50px;
+}
+
+/* ------------------------login---------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: #F9F7F7;
+    flex-direction: column;
+/* background-color:#EDE9E8; */
+}
+
+/* ------------------------- header1 -----------------------*/
+.navbar{
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary);
+}
+/* .nav-item{
+    color:#112D4E;
+    display: flex;
+    flex-direction: columns;
+    text-align: center;
+} */
+.nav-link{
+    color:#2D77CE;
+    margin-left: 50px;
+}
+
+
+.login, .fpcontainer {
+    background-color: #FFFFFF;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    max-width: 775px;
+    width: 100%;
+}
+.middle{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0%;
+}
+.login{
+    background-image: url("images/clipboard.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+    background-size: 273px 570px;
+}
+/* .fpcontainer{
+
+} */
+.form-control-login {
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid #797979;
+}
+.form-control:focus{
+    border: 1px solid #797979;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(0, 0, 0, 0);
+}
+.form-label{
+    font-weight: 500;
+    font-size: 16px;
+}
+.form-group, h1, .fp, .btn{
+    margin-left: 25px;
+}
+.group{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color:#7F7F7F;
+
+}
+.fp, .account{
+    font-size: 12px;
+}
+.fp{
+	color: #AAAAAA;
+	text-decoration: none;
+}
+.register{
+	text-decoration: none;
+	color: var(--primary);
+}
+.account{
+    color: #AAAAAA;
+    margin-left: 7.5rem;
+    margin-bottom: 0px;
+}
+h1{
+    font-weight: 700;
+}
+input {
+    color: #FFFFFF;
+    border: 1px solid #797979;
+    padding-left: var(--input-btn-padding-x);
+}
+
+.loginbtn {
+    height: 60px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: var(--secondbody);
+    border: none;
+    color:#fefefe;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 20px 25px;
+
+}
+
+
+/* ----------------email conf-------------------- */
+.inner{
+    background-color: #FFFFFF;
+    /* padding:50px; */
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.btn2{
+    height: 60px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    border: none;
+    color:#fefefe;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.conf-headline{
+    font-weight: 600;
+}
+.form-control2 {
+    height: 60px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid #797979;
+}
+.form-control2:focus{
+    border: 1px solid #797979;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(0, 0, 0, 0);
+}
+
+/* fp2 */
+
+.fpcontainer{
+    background-image: url("fpimg2.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+    background-size: 333px 500px;
+    margin-right: 20px;
+}
+.button{
+    margin: 0;
+}
+.btn3{
+    margin-top: 10px;
+    width: 350px;
+}
+
+
+#password1, #password2{
+    height: 60px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid #797979;
+}
+#password1, #password2:focus{
+    border: 1px solid #797979;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(0, 0, 0, 0);
+}
+
+
+/* fp success */
+.successCont{
+    background-color: #FFFFFF;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.headlineReset{
+    font-weight: 600;
+}
+.btn4{
+    width: 350px;
+    margin: 0;
+}
+.resetlogo{
+    margin: 20px 0px;
+}
+
+
+/* ------------------ footer -------------------- */
+footer {
+    background-color: var(--secondary);
+}
+.footerlogo{
+    margin-left: 30px;
+}
+ul{
+
+    list-style: none;
+}
+
+.footerhp, .last{
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: 200;
+    font-size: 12px;
+}
+.helpcenter {
+    color: #fefefe;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.container3{
+    padding: 30px 0px;
+}
+a{
+	text-decoration: none;
+}

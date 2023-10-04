@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.logoutbtninHeader{
+	color: #2D77CE; 
+	margin-top: 6px; 
+	border-radius: 20px;
+}
+.navbar{
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+    background-color:#fffff;
+    margin-bottom: 1.5%;
+}
+.nav-link{
+    color:#2D77CE;
+    margin-left: 50px;
+}
+.navbar-header2{
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+.nav-link-header2{
+    color:#919191;
+    margin-left: 50px;
+}
+.nav-link-header2:hover{
+	color:#2D77CE;
+}
+.bi-header2{
+    font-size: 24px;
+}

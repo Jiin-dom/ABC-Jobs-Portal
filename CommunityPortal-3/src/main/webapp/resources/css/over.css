@@ -1,0 +1,54 @@
+.nav-link {
+	border-radius: 0px !important;
+}
+
+.c-ibc:hover > .interactive-bc {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0s linear;
+}
+
+.c-ibc:hover > .interactive-bc > button:nth-child(1) {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .5s linear;
+}
+
+.c-ibc:hover > .interactive-bc > button:nth-child(2) {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.interactive-bc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  right: -0;
+  transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.interactive-bc > button:nth-child(1) {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s .5s, opacity .5s linear;
+}
+
+.interactive-bc > button:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.interactive-bc > button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .15);
+}

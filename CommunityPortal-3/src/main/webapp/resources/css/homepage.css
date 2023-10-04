@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/* .col{
+	border:1px solid red;
+} */
+/* * {
+  box-sizing: border-box;
+} */
+
+.homepagebody{
+	background-color:#F9F7F7;
+}
+
+.homepageWholeContainer{
+	padding-top: 1%;
+}
+/* .homepageContainer{
+	margin-top: 3%;
+} */
+.homepageContainerRow{
+	margin-top: 3%;
+}
+
+.homepagecol1{
+	padding:0;
+
+}
+
+.homeProfileCard{
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	border-radius: 24px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	position: sticky;
+	top: 7%;
+}
+
+
+/* .homeProfileCardBody{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+.homeProfileCardUserName{
+	font-size: 18px;
+	font-weight: 600;
+	text-align:center;
+}
+.homeProfileCardJob{
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom:30px;
+	text-align:center;
+}
+.homeProfileCardList{
+	display: flex;
+	gap:10px;
+	font-size: 14px;
+	color: #919191;
+	margin-top: 15px;
+
+}
+.homeProfileCardList p{
+	margin: 0;
+}
+.stats{
+	margin-top:15px;
+	margin-bottom:15px;
+	text-align: center;
+	padding-left:0;
+	
+}
+
+
+/* -----------homepage middle part--------  */
+#threadPostDiv{
+	/* padding: 10px 20px; */
+	border-radius: 20px;
+	margin-top: -30px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	margin-bottom: 4%;
+}
+
+.profileNpostInput{
+	display: flex;
+	border-bottom: 0.5px solid #AAAAAA;
+	padding: 15px 15px;
+
+}
+
+.mediaUploads{
+	padding: 10px 10px;
+	
+}
+.postInputFieldHomepage{
+	background-color: #f5f5f7;
+	border: 0.5px solid #AAAAAA; 
+}
+
+/* -----------homepage right part--------  */
+#peopleUmightKnowCard{
+		margin-top: -30px;
+	border-radius: 20px;
+	max-height: 420px;
+	height: 100%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* .homepagecol3{
+	padding-left: 0;
+} */
+.peopleUmightKnow{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.peopleUmightKnowList{
+	gap: 15px;
+}
+.peopleDisplayDiv{
+	margin-left: 10px;
+	display:flex;
+	gap: 15px;
+}
+.userDisplayName{
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+.userDisplayHeadline{
+	font-size: 14px;
+	color: #919191;	
+	font-weight: 300px;
+	margin-bottom: 8px;
+	
+}
+.userDisplayButton{
+	font-size: 14px;
+	background-color: #ffff;
+	border: 1px solid var(--primary);
+	color: var(--primary);
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+.userDisplayButton:hover{
+	background-color: var(--primary);
+	color: #fefefe;
+}
+
+#recentJobPosts{
+	margin-top: 3.5%;
+	margin-bottom: 3.5%;
+	border-radius: 20px;
+	height: 300px;
+	max-height: 300px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#recentJobPostsBody{
+			overflow: hidden;
+	overflow-y: auto;
+}
+
+#recentJobPosts::-webkit-scrollbar::hover {
+  width: 0.5em;
+  background-color: none;
+}
+ 
+#recentJobPosts::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+#recentJobPosts::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+    outline: none;
+}
+.jobDisplayDivInner{
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content: space-between;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.jobDisplayDiv{
+	text-decordation: none;
+	color: #313131;
+}
+.jobDisplayTitle{
+	font-size:18px;
+	margin-bottom: 3px;
+}
+.jobDisplayCompany{
+	font-size:14px;
+	color: #313131;
+	font-weight:400;
+	margin-bottom: 0px;
+}
+.jobDisplayType{
+	color: #919191;
+	font-weight:400;
+}
+
+
+/* //post modal */
+.select-menuWProfilePost{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.userNameInPostModal{
+	font-size:16px;
+}
+.postOptions{
+	font-size: 12px;
+	font-weight: 500;
+	margin:0;
+}
+.postOptions option{
+	font-size: 12px;
+}
+
+/*  ----------- posts cards---------*/
+#postCard{
+	border-radius: 24px;
+	margin-bottom:3%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.postCardUserProfile{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.postCardUserProfile * {
+	margin:0;
+}
+.postCardUserProfileName{
+	font-size: 16px;
+	font-weight: 500;
+}
+.postCardUserProfileHeadline{
+	font-size: 12px;
+	color: #919191;
+	font-weight: 400;
+}
+.postCardUserProfileTime{
+	font-size: 12px;
+	color: #c2c2c2;
+	font-weight: 400;
+}
+.postCardContentImg{
+	padding: 20px 40px;
+	background-color: #c2c2c2;
+	text-align: center;
+}
+.postCardContentImg * {
+	margin: 0;
+}
+.postCardContent{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.postCardContent *{
+	margin: 0;
+}
+.postCardPostContent{
+		font-size: 14px;
+	font-weight: 400;
+}
+.postCardActionButtonsDiv{
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 0.5px solid #AAAAAA;
+	padding-top: 15px;
+}
+
+.postCardActionButtons{
+	display: flex;
+	gap: 5px;
+}
+.postCardActionButtons *{
+	margin:0;
+}
+
+
+/*  ----------- comments ---------*/
+.commentPart1 *, .commentPart2 *{
+	margin: 0;
+}
+.commentPart1{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2%;
+}
+.commentPart2{
+	padding: 8px 12px;
+	background-color: #ececec;
+	border-radius: 10px;;
+	width: 100%;
+}
+.commentPart3{
+	width: 100%;
+}
+.commentInner{
+	display: flex;
+	gap: 5px;
+	
+}
+
+.commenterName, .replyUserName{
+	font-size: 13px;
+}
+.commenterHeadline, .replyUserHeadline{
+	font-size: 10px;
+	color: #919191;
+	font-weight: 300;
+}
+.commentTime, .replyPostedTime{
+	font-size: 10px;
+	color: #919191;
+	font-weight: 400;
+}
+.timeNDeleteToggle{
+	display: flex;
+	gap: 5px;
+}
+
+
+.commenterComment, .replyContent{
+	font-size: 14px;
+}
+.commentsContainer{
+	margin-top:3%;
+}
+
+
+
+
+.replyBlob * {
+	margin:0;
+}
+.replyBlobInner{
+	padding: 8px 12px;
+	background-color: #ececec;
+	border-radius: 10px;;
+	width: 100%;
+	margin-bottom:5px;
+}
+.replyBlob{
+	width: 100%;
+}
+.replyBlogCont{
+	display: flex;
+	gap: 5px;
+	margin-bottom: 15px;
+}
+.replyUsernameNTime{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2%;
+}
+.replyToggle, .showMoreButton{
+	font-size: 12px;
+	/* text-align: right; */
+	color: #616161;
+	padding: 0px 5px;
+	
+}
+.replyNshow{
+	display: flex;
+}
+.replyNshow *{
+	margin:0;
+}
+.showMoreButton{
+	border-left: 2px solid #616161;
+}
+.comment3{
+	margin-bottom: 15px;
+}
+.commentPart2{
+	margin-bottom: 5px;
+}
+#commentInput{
+	background-color: #ececec;
+	font-size: 14px;
+	color: #00000;
+	border-radius: 0px solid #ececec;
+}
+
+
+/* profile picturess */
+.circular-image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Preserve aspect ratio and fill the container */
+  border: 2px solid #ffffff; /* Add a border to the circular image */
+  object-position: top center;
+}
+.profilePicTwo{
+	width: 50px; 
+	height: 50px; 
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: top center;
+}
+.homeProfileCard .aTagBeforeImg img {
+/*   max-width: 280px; */
+  width: 10vw;
+  height: 20vh;
+  object-fit: cover;
+  margin-top: -30px;
+ border-radius: 24px;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ object-position: top center;
+}
+.profilePic3Post, .profilePicUserList{
+	width: 50px; 
+	height: 50px; 
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: top center;
+}
+.profilePic4Comment{
+	width: 30px; 
+	height: 30px; 
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: top center;
+}
+.profilePic5Reply, .profilePic6NestedReply{
+	width: 30px; 
+	height: 30px; 
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: top center;
+}
+
+.replyNestedInputFieldInner{
+	display: flex;
+	gap: 5px;
+	
+}
+#commentInput{
+	color: #313131;
+}
+#commentInputForm{
+	width: 100%;
+	/* margin: 2% 0%; */
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+}
+
+
+.sideFooterHomepage{
+	position: sticky;
+	top: 3%;
+}
+
+
+/* ---------- header ------------*/
+.navbar-header2{
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+.nav-link-header2{
+    color:#2D77CE;
+    margin-left: 50px;
+}
+.bi-header2{
+    font-size: 24px;
+}
+.dropdowm-menu{
+	display: block
+}
+@media (max-width: 1192px){
+	.userDisplayName{
+		font-size: 16px;
+	}
+	.userDisplayHeadline{
+		font-size: 12px;
+	}
+	.userDisplayButton{
+	font-size: 12px;
+	}
+	
+	.jobDisplayTitle{
+	font-size: 14px;
+	}
+	.jobDisplayCompany{
+	font-size: 12px;
+	}
+	.jobDisplayDivInner{
+	
+	
+	}
+}
+@media (max-width: 1000px){
+		#threadPostDiv{
+	margin-top: 0px;
+
+	}
+	.homeProfileCard .aTagBeforeImg #homeProfileCardImg{
+	  width: 20vh;
+	  height: 20vh;
+	  object-fit: cover;
+	  margin-top: -30px;
+	}
+	.homeProfileCard{
+	margin-top: 15%;
+	}
+	
+	.stats{
+	padding-left: 20px;
+
+	}
+	.homeProfileCardJob{
+	margin-bottom:10px;
+
+}
+	
+}
+
+@media (max-width: 768px){
+	#threadPostDiv{
+	margin-top: 0;
+
+	}
+
+}
+/* .comment {
+    border-left: 2px solid #ccc; Add a border to indicate the hierarchy
+}
+
+.reply {
+    border-left: 2px solid #ccc; Add a border to indicate the hierarchy
+} */
